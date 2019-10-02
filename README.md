@@ -64,6 +64,12 @@ public PageInfo<Student> select(int pageNum, int pageSize) {
         return new PageInfo<>(studentMapper.select());
     }
 ```
+###5.测试例子
+数据库总共5条数据
+![image.png](https://upload-images.jianshu.io/upload_images/15706831-3e6732a5f4e222c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+查询第2页，每页显示2条，结果如下图所示
+![image.png](https://upload-images.jianshu.io/upload_images/15706831-9f73b65c65be1a06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 #####项目结构
 ![image.png](https://upload-images.jianshu.io/upload_images/15706831-88448b6e76774323.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ####git下载地址
