@@ -1,9 +1,9 @@
-###Mybatis简单介绍
+### Mybatis简单介绍
 官网：https://pagehelper.github.io/docs/howtouse/
 PageHelper：Mybatis的分页插件
-###1.搭建项目
+### 1.搭建项目
 ![image.png](https://upload-images.jianshu.io/upload_images/15706831-fed0ae90ff751cbd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-###2.导入依赖
+### 2.导入依赖
 ```
 <dependencies>
     <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
@@ -32,7 +32,7 @@ PageHelper：Mybatis的分页插件
   </dependencies>
 ```
 ``如果已经是springboot项目，导入pagehelper-spring-boot-starter即可``
-###3.application.properties配置
+### 3.application.properties配置
 ```
 #端口号
 server.port=8080
@@ -55,7 +55,7 @@ pagehelper.helper-dialect=mysql
 pagehelper.reasonable=true
 ```
 
-###4.简单使用
+### 4.简单使用
 ```
 public PageInfo<Student> select(int pageNum, int pageSize) {
         //设置分页参数，默认查询总数count
@@ -64,13 +64,13 @@ public PageInfo<Student> select(int pageNum, int pageSize) {
         return new PageInfo<>(studentMapper.select());
     }
 ```
-###5.测试例子
+### 5.测试例子
 数据库总共5条数据
 ![image.png](https://upload-images.jianshu.io/upload_images/15706831-3e6732a5f4e222c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 查询第2页，每页显示2条，结果如下图所示
 ![image.png](https://upload-images.jianshu.io/upload_images/15706831-9f73b65c65be1a06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#####项目结构
+##### 项目结构
 ![image.png](https://upload-images.jianshu.io/upload_images/15706831-88448b6e76774323.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-####git下载地址
+#### git下载地址
 https://github.com/shizhenshuang123/Springboot-Mybatis-PageHelper
